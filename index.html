@@ -186,8 +186,8 @@
   </main>
 <script>
   const boton = document.querySelector("#boton");
-  const mensaje = document.querySelector("#mensaje");
-  
+  const frase = document.querySelector("#frase");
+
   const frasesMotivacionales = [
     "Tú puedes con todo lo que te propongas.",
     "Cada pequeño paso cuenta.",
@@ -203,8 +203,7 @@
     "Después de un día difícil también sale el sol.",
     "Puedes hacerlo, incluso si ahora parece complicado.",
     "Tu progreso merece ser celebrado.",
-    "Sé paciente contigo misma.",
-    "No vuelvas con tu ex por favor."
+    "Sé paciente contigo misma."
   ];
 
   boton.addEventListener("click", () => {
@@ -212,8 +211,7 @@
       Math.random() * frasesMotivacionales.length
     );
 
-    mensaje.textContent = frasesMotivacionales[indiceAleatorio];
-    boton.textContent = "Otra frase.";
+    frase.textContent = frasesMotivacionales[indiceAleatorio];
   });
 </script>
 </body>
