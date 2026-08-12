@@ -176,8 +176,7 @@
     <h1>Holi <span>:3</span></h1>
 
     <p class="descripcion">
-      Una página sencilla, bonita y adaptable a celulares para practicar
-      cómo subir un proyecto a GitHub y publicarlo en Railway.
+      Una página sencilla y bonita que genera frases motivacionales.
     </p>
 
     <button id="boton" type="button">Probar la página</button>
@@ -185,15 +184,37 @@
 
     <footer>Hecho con HTML, CSS y un poquito de JavaScript ✦</footer>
   </main>
+<script>
+  const boton = document.querySelector("#boton");
+  const mensaje = document.querySelector("#mensaje");
+  
+  const frasesMotivacionales = [
+    "Tú puedes con todo lo que te propongas.",
+    "Cada pequeño paso cuenta.",
+    "Confía en ti, vas mejor de lo que crees.",
+    "No te rindas, estás más cerca de lo que piensas.",
+    "Hoy es un buen día para intentarlo de nuevo.",
+    "Los grandes cambios comienzan con pequeños pasos.",
+    "Cree en tu proceso.",
+    "Hazlo a tu ritmo, pero nunca dejes de avanzar.",
+    "Eres capaz de lograr cosas increíbles.",
+    "Tu esfuerzo de hoy construye tu futuro.",
+    "No necesitas ser perfecta, solo seguir adelante.",
+    "Después de un día difícil también sale el sol.",
+    "Puedes hacerlo, incluso si ahora parece complicado.",
+    "Tu progreso merece ser celebrado.",
+    "Sé paciente contigo misma.",
+    "No vuelvas con tu ex por favor."
+  ];
 
-  <script>
-    const boton = document.querySelector("#boton");
-    const mensaje = document.querySelector("#mensaje");
+  boton.addEventListener("click", () => {
+    const indiceAleatorio = Math.floor(
+      Math.random() * frasesMotivacionales.length
+    );
 
-    boton.addEventListener("click", () => {
-      mensaje.textContent = "¡Funciona! Tu página ya está lista para publicar 🚀";
-      boton.textContent = "¡Todo listo!";
-    });
-  </script>
+    mensaje.textContent = frasesMotivacionales[indiceAleatorio];
+    boton.textContent = "Otra frase.";
+  });
+</script>
 </body>
 </html>
