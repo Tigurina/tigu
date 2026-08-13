@@ -99,19 +99,20 @@ h1 {
   width: 100%;
   height: 180px;
   margin: 0;
-  padding: 0 5px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  font-size: clamp(1.7rem, 8vw, 3.2rem);
-  line-height: 1.1;
-  letter-spacing: -0.04em;
+  font-size: 4.5rem;
+  line-height: 1.05;
+  letter-spacing: -0.055em;
 
-  overflow: visible;
+  overflow: hidden;
   overflow-wrap: break-word;
   word-break: normal;
+
+  transition: font-size 150ms ease;
 }
 
 h1 span {
@@ -186,14 +187,24 @@ footer {
     font-size: 0.75rem;
   }
 
-  h1 {
-    width: 100%;
-    height: 180px;
-    padding: 0 5px;
+h1 {
+  width: 100%;
+  height: 180px;
+  margin: 0;
+  padding: 0 5px;
 
-    font-size: clamp(2rem, 11vw, 3.5rem);
-    line-height: 1.05;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: clamp(1.7rem, 8vw, 3.2rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+
+  overflow: visible;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
 
   .descripcion {
   width: 100%;
