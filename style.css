@@ -55,7 +55,7 @@ height: 560px;
 padding: 45px clamp(32px, 7vw, 70px);
 
 display: grid;
-grid-template-rows: 45px 180px 95px 55px 30px;
+grid-template-rows: 45px 180px 135px 55px 30px;
 align-content: center;
 justify-items: center;
 
