@@ -180,6 +180,7 @@ footer {
 
   border-radius: 24px;
 }
+  grid-template-rows: 45px 180px 135px 55px 30px;
   .etiqueta {
     margin-bottom: 10px;
     padding: 7px 12px;
