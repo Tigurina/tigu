@@ -96,23 +96,22 @@ overflow: hidden;
 }
 
 h1 {
-width: 100%;
-height: 180px;
-margin: 0;
+  width: 100%;
+  height: 180px;
+  margin: 0;
+  padding: 0 5px;
 
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-font-size: 4.5rem;
-line-height: 1.05;
-letter-spacing: -0.055em;
+  font-size: clamp(1.7rem, 8vw, 3.2rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
 
-overflow: hidden;
-overflow-wrap: break-word;
-word-break: normal;
-
-transition: font-size 150ms ease;
+  overflow: visible;
+  overflow-wrap: break-word;
+  word-break: normal;
 }
 
 h1 span {
